@@ -1,0 +1,6 @@
+//Globals:It has no window (we can console.log each of them to know)
+ _dirname: path to current directory
+__filename: _filename
+require: function to use modules
+module: info about current module
+proccess: info about environment where the program is being executed
