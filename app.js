@@ -6,7 +6,15 @@ else{
     console.log("Not so big number")
 }
 
-console.log("My first node app.js file !!!")
 
-const names=require('./4names');
-console.log(names);
+
+
+
+// console.log("My first node app.js file !!!")
+
+// const names=require('./4names');
+// console.log(names);
+
+//For 6th
+const data=require('./6-alternativeFlavours');
+console.log(data);
