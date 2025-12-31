@@ -4,3 +4,6 @@ __filename: _filename
 require: function to use modules
 module: info about current module
 proccess: info about environment where the program is being executed
+
+
+Modules used so only the code that us supposed to be shared and not the whole thing...what if somw of the things I want to be local in the file as being a secret I can't share that

@@ -7,3 +7,6 @@ else{
 }
 
 console.log("My first node app.js file !!!")
+
+const names=require('./4names');
+console.log(names);
