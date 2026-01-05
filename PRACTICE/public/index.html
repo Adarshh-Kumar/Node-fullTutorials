@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Time Tracker</title>
+</head>
+<body>
+    <h2>Front-end Request Time</h2>
+    <button onclick="getTime()">Send Request</button>
+    <p id="result"></p>
+
+    <script>
+        function getTime() {
+            fetch('/time')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('result')
+                        .innerText = `Time Taken: ${data.timeTaken} ms`;
+                });
+        }
+    </script>
+</body>
+</html>

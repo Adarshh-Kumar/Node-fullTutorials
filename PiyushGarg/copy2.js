@@ -1,6 +1,21 @@
 const http=require('http');
 const fs=require('fs');
 const url=require('url');
+const express=require('express');
+
+const app=express();
+app.get('/',(req,res)=>{
+    res.send("Home page from express");
+})
+
+app.get('/about',(req,res)=>{
+    res.send("This is an about page from express");
+})
+
+app.get('/ssup',(req,res)=>{
+    res.send("WHATisAPP");
+})
+
 
 const server=http.createServer((req,res)=>{
     // const log='${Date.now()}: ${req.url}:New Request';
@@ -29,4 +44,5 @@ const server=http.createServer((req,res)=>{
 
 
 })
-    server.listen(8000);
+
+server.listen(8000);
